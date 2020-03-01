@@ -1,1 +1,2 @@
-# coronavirus
+# Kurd coronavirus
+زانیاری تەواو لەسە کۆڕۆنا ڤایرۆس بەدەست بێنە
