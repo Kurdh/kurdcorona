@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://unpkg.com/scrollreveal"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="jquery-2.1.4.js"></script>      
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=Krona+One|Montserrat|Raleway&display=swap');
+/*
+    font-family: 'Montserrat';
+    font-family: 'Krona One';
+    font-family: 'Raleway', ;
+*/
+html{
+    visibility:hidden ;
+}
+body {
+    background-color:#212F3D;
+    margin:0;
+    padding:0;
+}
+.card{
+    width:92%;
+    height:480px;
+    background-color:#fefcf6;
+    position:absolute ;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:10px;
+    top:50%;
+}
+.clip-top-1{
+    width:100%;
+    height:175px;
+    position:relative;
+    background:linear-gradient(-45deg, #E8290B, #EC4849 );
+    clip-path: polygon(100% 0%, 100% 50%, 0% 100%, 0% 0%);
+    border-radius:10px 10px 0 0;
+}
+.line{
+    position:relative ;
+    width:80px;
+    height:2px;
+    border-radius:10px;
+    background-color:#fff;
+    top:-25px;
+    left:10px;
+    transform:rotate(-15deg);
+    box-shadow:240px 0px #fff;
+}
+.user-img{
+    width:115px;
+    height:auto ;
+    border-radius:50%;
+    position:absolute ;
+    top:110px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border:3.5px solid #fff;
+    background-position:0px 0px;
+    transition:0.3s;
+}
+.user-img:hover{
+    width:140px;
+    height:auto ;
+    border-radius:50%;
+    position:absolute;
+    top:110px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:100;
+    background-position:0px 0px;
+}
+.user-name{
+    position:absolute ;
+    font-size:20px;
+    font-family: 'Montserrat' ;
+    top:220px;
+    font-weight:bolder ;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.user-profession{
+    position:absolute ;
+    font-size:13.5px;
+    font-family: 'Montserrat' ;
+    top:245px;
+    color:#616C6F;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.user-description{
+    position:absolute ;
+    font-size:11px;
+    font-family: 'Montserrat' ;
+    top:300px;
+    line-height:15px;
+    left:50%;
+    word-spacing:3px;
+    text-align:center ;
+    width:90%;
+    transform:translate(-50%, -50%);
+}
+.btn{
+    position:absolute ;
+    font-size:15px;
+    font-family: 'Montserrat' ;
+    top:390px;
+    background-color:#E44236;
+    left:50%;
+    align-items:center ;
+    padding:15px 15px 15px 15px;
+    word-spacing:3px;
+    text-align:center ;
+    color:#fff;
+    text-decoration:none ;
+    width:70%;
+    transition:0.2s;
+    transform:translate(-50%, -50%);
+}
+.yellow{
+    position:relative;
+    height:20px;
+    width:84px;
+    background-color:#F3B431;
+    top:277px;
+}
+.green{
+    position:relative;
+    height:20px;
+    width:84px;
+    background-color:#218F76;
+    top:257px;
+    left:84px;
+}
+.dark{
+    position:relative;
+    height:20px;
+    width:84px;
+    background-color:#34495e;
+    top:237px;
+    left:164px;
+}
+.red{
+    position:relative;
+    height:20px;
+    width:87px;
+    background-color:red;
+    top:217px;
+    left:244px;
+}
+.clip-bottom{
+    width:100%;
+    height:6px;
+    position:absolute ;
+    bottom:0;
+    background-color:#E44236;
+    border-radius:0 0 10px 10px;
+}
+   </style>
+   <script>
+   
+   $(document).ready(function(){
+  $(".yellow").click(function(){
+  $(".clip-top-1").css("background","#F3B431");
+  $(".clip-top-1").css("transition","0.6s")
+  $(".btn").css("background","#F3B431");
+  $(".btn").css("transition","0.6s")
+  $(".clip-bottom").css("background","#F3B431");
+  });
+  
+  $(".green").click(function(){
+  $(".clip-top-1").css("background","#218F76");
+  $(".clip-top-1").css("transition","0.6s")
+  $(".btn").css("background","#218F76");
+  $(".btn").css("transition","0.6s")
+  $(".clip-bottom").css("background","#218F76");
+  });
+  
+  $(".dark").click(function(){
+  $(".clip-top-1").css("background","#34495e");
+  $(".clip-top-1").css("transition","0.6s")
+  $(".btn").css("background","#34495e");
+  $(".btn").css("transition","0.6s")
+  $(".clip-bottom").css("background","#34495e");
+  });
+  
+  $(".red").click(function(){
+  $(".clip-top-1").css("background","#E8290B");
+  $(".clip-top-1").css("transition","0.6s")
+  $(".btn").css("background","#E8290B");
+  $(".btn").css("transition","0.6s")
+  $(".clip-bottom").css("background","#E8290B");
+  });
+});
+   </script>
+   </head>
+    <body>
+        <div class="card">
+            <div class="clip-top-1"></div>
+            <div class="line"></div>
+            <img class="user-img" src="https://i.ibb.co/s6QNRNj/IMG-20200224-015514.jpg" alt="IMG-20200224-015514" border="0">
+            <div class="user-name">Hailee Steinfeld</div>
+            <div class="user-profession">UI/UX Designer</div>
+            <div class="user-description">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat semot aquila</div>
+            <a class="btn" href="#">Hire Me</a>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="dark"></div>
+            <div class="red"></div>
+            <div class="clip-bottom"></div>
+        </div>
+        
+        <script>
+            ScrollReveal().reveal('.card', {delay: 1000});
+
+        </script>
+    </body>
+</html>
